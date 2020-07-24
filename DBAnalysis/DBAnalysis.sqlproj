@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DBAnalysis</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{43e53156-e195-489e-9539-fb581a776445}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DBAnalysis</RootNamespace>
+    <AssemblyName>DBAnalysis</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\D001006.sql" />
+    <Build Include="dbo\Tables\D009011.sql" />
+    <Build Include="dbo\Tables\D001106.sql" />
+    <Build Include="dbo\Tables\D001206.sql" />
+    <Build Include="dbo\Tables\D111009.sql" />
+    <Build Include="dbo\Tables\D045370.sql" />
+    <Build Include="dbo\Tables\D009097.sql" />
+    <Build Include="dbo\Tables\D009511.sql" />
+    <Build Include="dbo\Tables\D009012.sql" />
+    <Build Include="dbo\Tables\D009015.sql" />
+    <Build Include="dbo\Tables\D111010.sql" />
+    <Build Include="dbo\Tables\D111008.sql" />
+    <Build Include="dbo\Tables\D045371.sql" />
+    <Build Include="dbo\Tables\D045272.sql" />
+    <Build Include="dbo\Tables\D045264.sql" />
+    <Build Include="dbo\Tables\D045254.sql" />
+    <Build Include="dbo\Tables\D045470.sql" />
+    <Build Include="dbo\Tables\D045170.sql" />
+    <Build Include="dbo\Tables\D045079.sql" />
+    <Build Include="dbo\Tables\D045057.sql" />
+    <Build Include="dbo\Tables\D045011.sql" />
+    <Build Include="dbo\Tables\D045016.sql" />
+    <Build Include="dbo\Tables\D010014.sql" />
+    <Build Include="dbo\Tables\D010043.sql" />
+    <Build Include="dbo\Tables\D010054.sql" />
+    <Build Include="dbo\Tables\D030003.sql" />
+    <Build Include="dbo\Tables\D030011.sql" />
+    <Build Include="dbo\Tables\D030051.sql" />
+    <Build Include="dbo\Tables\D009522.sql" />
+    <Build Include="dbo\Tables\D009344.sql" />
+    <Build Include="dbo\Tables\D009244.sql" />
+    <Build Include="dbo\Tables\D009243.sql" />
+    <Build Include="dbo\Tables\D009122.sql" />
+    <Build Include="dbo\Tables\D009142.sql" />
+    <Build Include="dbo\Tables\D009147.sql" />
+    <Build Include="dbo\Tables\D009092.sql" />
+    <Build Include="dbo\Tables\D009042.sql" />
+    <Build Include="dbo\Tables\D009022.sql" />
+    <Build Include="dbo\Tables\D010114.sql" />
+    <Build Include="dbo\Tables\D001018.sql" />
+    <Build Include="dbo\Tables\D001118.sql" />
+    <Build Include="dbo\Tables\D009040.sql" />
+    <Build Include="dbo\Tables\D009039.sql" />
+    <Build Include="dbo\Tables\D009041.sql" />
+    <Build Include="dbo\Tables\D009043.sql" />
+    <Build Include="dbo\Tables\D009245.sql" />
+    <Build Include="dbo\Tables\D009246.sql" />
+    <Build Include="dbo\Tables\D009346.sql" />
+    <Build Include="dbo\Tables\D010004.sql" />
+    <Build Include="dbo\Tables\D021005.sql" />
+    <Build Include="dbo\Tables\D940110.sql" />
+    <Build Include="dbo\Tables\D940111.sql" />
+    <Build Include="dbo\Tables\D940115.sql" />
+    <Build Include="dbo\Tables\D990007.sql" />
+    <Build Include="dbo\Tables\D001005.sql" />
+    <Build Include="dbo\Tables\D001004.sql" />
+    <Build Include="dbo\Tables\D010007.sql" />
+    <Build Include="dbo\Tables\D009021.sql" />
+    <Build Include="dbo\Tables\D009109.sql" />
+    <Build Include="dbo\Tables\D009009.sql" />
+    <Build Include="dbo\Tables\D009209.sql" />
+    <Build Include="dbo\Tables\D020004.sql" />
+    <Build Include="dbo\Stored Procedures\upsTableStrCopy.sql" />
+    <Build Include="dbo\Stored Procedures\UPSBranchBackUp.sql" />
+  </ItemGroup>
+</Project>

@@ -129,5 +129,6 @@
     <Build Include="dbo\Stored Procedures\upsTableStrCopy.sql" />
     <Build Include="dbo\Stored Procedures\UPSBranchBackUp.sql" />
     <Build Include="dbo\Function\Function1.sql" />
+    <Build Include="dbo\Stored Procedures\CovidOd.sql" />
   </ItemGroup>
 </Project>
